@@ -77,3 +77,24 @@ console.log(x, typeof x);
 console.log(y, typeof y);
 console.log(z, typeof z);
 ```
+
+## `Const`
+
+- variable ชนิดนึงที่ไม่สามารถเปลี่ยนแปลงค่าได้(`re-assign ค่าไม่ได้`)
+- การตั้งชื่อของ const ควรเป็น uppercase ทั้งหมด (`Good practice`)
+
+```
+const PI = 3.14159;
+let radius;
+let circumference;
+
+radius = window.prompt("Enter the radius of a circle");
+radius = Number(radius);
+
+PI = 420.69; => จะ error ว่า re-assign const ไม่ได้
+
+circumference = 2 * PI * radius;
+
+console.log("The circumference is:", circumference);
+
+```
