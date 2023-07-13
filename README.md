@@ -57,3 +57,23 @@ students /= 2;
 ```
 let result = (1 + 2) * (3 + 4);
 ```
+
+## `Type conversion`
+
+- การเปลี่ยน data type นึงไปเป็นอีก data type นึง
+- `typeof` var => คือการ get data type ของ variable
+- การ convert type => ใส่ constructure ของ type ให้กับ variable (`Number(var),String(var),Boolean(var)`)
+
+```
+let x;
+let y;
+let z;
+
+x = Number("pizza"); // Number => convert to number (ถ้า convert ไม่ได้มันจะ return NaN(not-a-number))
+y = String(3.14); // String => convert to string
+z = Boolean("pizza"); // Boolean => convert to boolean (ถ้าเป็น "" จะ return false แต่ถ้าเป็น string อะไรก็ได้จะ return true)
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
+```
