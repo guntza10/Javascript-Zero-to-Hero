@@ -120,3 +120,5 @@ maximum = Math.max(x, y, z);
 minimum = Math.min(x, y, z);
 x = Math.PI;
 ```
+
+## `Hypotenuse calculator`
