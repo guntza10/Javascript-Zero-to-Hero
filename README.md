@@ -539,3 +539,29 @@ let isAdult = age >= 18 ? true : false;
 let win = true;
 win ? console.log("You win!") : console.log("You lose!");
 ```
+
+## `Template literals`
+
+- ใช้ (`) แทน '' ,"" (single or double quotes)
+- allows embedded variables and expressions
+- ใช้สำหรับเก็บ string แบบ multiple lines ได้
+
+```
+let userName = "Bro";
+let items = 3;
+let total = 75;
+
+// normal
+console.log("Hello", userName);
+console.log("You have", items, "items in your cart");
+console.log("Your total is $", total);
+
+// template literal
+console.log(`Hello ${userName}`);
+console.log(`You have ${items} items in your cart`);
+console.log(`Your total is $${total}`);
+
+let text = `Hello ${userName}<br>
+You have ${items} items in your cart<br>
+Your total is $${total}<br>`;
+```
