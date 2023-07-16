@@ -400,3 +400,23 @@ do {
 console.log("Hello", userName);
 
 ```
+
+## `For loop`
+
+- repeat code ตามจำนวนที่กำหนดตามที่เราต้องการ
+- กำหนด range เริ่มต้น-สุดท้าย ของจำนวน loop ได้
+
+```
+// for loop 1 -> 10
+for(let i = 1; i <= 10; i+=1){
+    console.log(i);
+}
+
+// for loop 10 -> 1
+for (let i = 10; i > 0; i -= 1) {
+  console.log(i);
+}
+
+console.log("HAPPY NEW YEAR!");
+
+```
