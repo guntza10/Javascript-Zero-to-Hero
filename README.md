@@ -460,6 +460,9 @@ for (let i = 1; i <= rows; i += 1) {
 ## `Function`
 
 - Define code once, and use it many times and anywhere.To perform some code, call the function name.
+- argument => ค่าที่ส่งไปใน function
+- parameter => ค่าที่ function รับมา
+- argument,parameter คืออันเดียวกัน แต่คนละ perspective
 
 ```
 startProgram();
