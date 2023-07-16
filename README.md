@@ -190,6 +190,8 @@ let letter2 = userName.charAt(0).toUpperCase().trim();
 
 ## `If statement`
 
+- if a condition is true, then do something,if not, then don't do it!
+
 ```
 let age = 21;
 if (age >= 65) {
