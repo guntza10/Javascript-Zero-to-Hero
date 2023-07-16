@@ -32,6 +32,8 @@ let student = true; //booleans
 - scope ในการเข้าถึง variable นั้นๆ
 - let = variables are limited to block scope {}
 - var = variables are limited to a function(){}
+- global variable = is declared outside any function (if global,var will change browser's window properties)
+- ควรใช้ let มากกว่า var เพราะ var(global scope) มีโอกาสที่​ value อาจเปลี่ยนแปลงจากที่ไหนก็ได้ ที่เราไม่ต้องการ
 
 ```
 // block scope
@@ -40,7 +42,7 @@ for (let i = 1; i <= 3; i += 1) {
 }
 console.log(i); // code จะพังเพราะ i เป็น block scope(let) ที่ใช้ได้แค่ใน for loop
 
-// public scope
+// global scope
 for (var j = 1; j <= 3; j += 1) {
   console.log(j);
 }
