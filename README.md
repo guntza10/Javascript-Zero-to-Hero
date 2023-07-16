@@ -362,3 +362,22 @@ if (!sunny) {
 }
 
 ```
+
+## `While loop`
+
+- จะ repeat code ไปเรื่อยๆ ถ้า condition เป็น true (infinite loop)
+- จะออกจาก loop ก็ต่อเมื่อ condition เป็น false
+
+```
+// while loop = repeat some code
+//                       while some condition is true
+//                       potentially infinite
+
+let userName = "";
+
+while (userName == "" || userName == null) {
+  userName = window.prompt("Enter your name");
+}
+
+console.log("Hello", userName);
+```
