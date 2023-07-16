@@ -30,6 +30,8 @@ let student = true; //booleans
 ## `Variable scope`
 
 - scope ในการเข้าถึง variable นั้นๆ
+- let = variables are limited to block scope {}
+- var = variables are limited to a function(){}
 
 ```
 // block scope
