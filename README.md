@@ -174,3 +174,16 @@ lastName = fullName.slice(4);
 firstName = fullName.slice(0, fullName.indexOf(" "));
 lastName = fullName.slice(fullName.indexOf(" ") + 1);
 ```
+
+## `Method chaining`
+
+```
+let userName = "bro";
+// normal way
+let letter1 = userName.charAt(0);
+letter1 = letter1.toUpperCase();
+letter1 = letter1.trim();
+
+// method chaining
+let letter2 = userName.charAt(0).toUpperCase().trim();
+```
