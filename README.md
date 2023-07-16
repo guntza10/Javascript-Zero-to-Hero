@@ -503,3 +503,16 @@ function getArea(width, height) {
   return width * height;
 }
 ```
+
+## `Ternary operator`
+
+- short if...else
+
+```
+condition ? exprIfTrue : exprIfFalse
+
+let isAdult = age >= 18 ? true : false;
+
+let win = true;
+win ? console.log("You win!") : console.log("You lose!");
+```
