@@ -155,3 +155,22 @@ userName = userName.toLowerCase(); => convert to lower case
 
 phoneNumber = phoneNumber.replaceAll("-", ""); => replace string
 ```
+
+## `String slicing`
+
+- string.slice(`startIndex`, `endIndex`) => มันจะ extract part ของ string ออกมาแล้ว return เป็น string ใหม่ โดยที่ไม่มีการ modify original string เดิม
+- string.slice(`startIndex`, `endIndex`) => ถ้าเราไม่ใส่ `endIndex` มันจะ extract มาตั้งแต่ `startIndex` ไปจนครบทุกตัว
+- ตอน extract มาตั้งแต่ `startIndex` ถึง `endIndex` มันจะเอามาหมดไม่รวม `endIndex`
+
+```
+let fullName = "Snoop Dogg";
+let firstName;
+let lastName;
+
+firstName = fullName.slice(0, 3);
+lastName = fullName.slice(4);
+
+// dynamic code
+firstName = fullName.slice(0, fullName.indexOf(" "));
+lastName = fullName.slice(fullName.indexOf(" ") + 1);
+```
