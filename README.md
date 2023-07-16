@@ -424,7 +424,7 @@ console.log("HAPPY NEW YEAR!");
 ## `Break and continue`
 
 - break => break ออกจาก loop
-- continue => skip ไป loop ต่อไปเลย
+- continue => skip ไป loop ต่อไปเลย โดยไม่ทำ statement ที่เหลือ
 
 ```
 // break = breaks out of a loop entirely
