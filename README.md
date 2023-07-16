@@ -381,3 +381,22 @@ while (userName == "" || userName == null) {
 
 console.log("Hello", userName);
 ```
+
+## `Do While loop`
+
+- do while loop => ก็เหมือน while loop ต่างกันตอนที่ครัั้งแรกที่รัน มันจะทำ code statement ก่อนเลยแล้วค่อย check condition
+
+```
+// do while loop = do something,
+//                             then check the condition,
+//                             repeat if condition is true
+
+let userName;
+
+do {
+  userName = window.prompt("Enter your name");
+} while (userName == "");
+
+console.log("Hello", userName);
+
+```
