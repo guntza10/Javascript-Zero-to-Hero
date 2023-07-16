@@ -27,6 +27,23 @@ let age = 21; //number
 let student = true; //booleans
 ```
 
+## `Variable scope`
+
+```
+// block scope
+for (let i = 1; i <= 3; i += 1) {
+  console.log(i);
+}
+console.log(i); // code จะพังเพราะ i เป็น block scope(let) ที่ใช้ได้แค่ใน for loop
+
+// public scope
+for (var j = 1; j <= 3; j += 1) {
+  console.log(j);
+}
+
+console.log(j); // j อยู่นอก for loop ใช้งานได้ เพราะ j เป็น public scope(var)
+```
+
 ## `Arithmetic expressions`
 
 - คือการ combination กันของ operands (`values, variables, etc.`) กับ operators (`+,- ,*,,/,%`) ในการคำนวณ
