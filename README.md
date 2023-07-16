@@ -124,4 +124,17 @@ minimum = Math.min(...arr);
 x = Math.PI; => constant ค่า PI
 ```
 
-## `Hypotenuse calculator`
+## `Random number generator`
+
+- Math.random() => random decimal number ตั้งแต่ 0 - 1
+
+```
+ถ้าต้องการ random ตัวเลขให้มี range ตั้งแต่ 0 - n
+
+Math.random() * n -> จะ random ตั้งแต่ 0 - n (decimal number)
+
+Math.floor(Math.random() * n ) -> จะ random ตั้งแต่ 0 - n (integer number)
+
+ถ้าต้องการ random ตัวเลขให้มี range ตั้งแต่ 1 - n
+Math.floor(Math.random() * n ) + 1 -> จะ random ตั้งแต่ 1 - n (integer number)
+```
