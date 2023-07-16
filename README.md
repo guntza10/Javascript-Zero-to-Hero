@@ -303,3 +303,20 @@ switch(true){
         console.log(grade, "is not a letter grade!");
 }
 ```
+
+## `Strict equality operator`
+
+```
+// = assignment operator => assign value
+// == comparison operator => compare two value without data type (convert ให้เป็น type เดียวกันก่อน compare)
+// === strict equality operator => compare two value with data type (มันจะเช็ค data type ต้องเหมือนกันก่อนจะ compare)
+
+let x = "3.14";
+
+if (x === 3.14) {
+  console.log("That is pi");
+} else {
+  console.log("That is NOT pi");
+}
+
+```
