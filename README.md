@@ -442,6 +442,7 @@ for (let i = 1; i <= 20; i += 1) {
 ## `Nested loop`
 
 - loop ซ้อน loop
+- เอาไว้วาดบางอย่างบน space row,column แบบ 2 มิติ (วาดสี่เหลี่ยมผืนผ้าบน space 2 มิติ 4 x 5)
 
 ```
 let symbol = window.prompt("Enter a symbol to use");
