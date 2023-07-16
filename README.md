@@ -29,6 +29,8 @@ let student = true; //booleans
 
 ## `Variable scope`
 
+- scope ในการเข้าถึง variable นั้นๆ
+
 ```
 // block scope
 for (let i = 1; i <= 3; i += 1) {
