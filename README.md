@@ -109,16 +109,19 @@ let y = 5;
 let z = 9;
 let maximum;
 let minimum;
+const arr = [1, 2, 3, 5, 7, 500];
 
-x = Math.round(x);
-x = Math.floor(x);
-x = Math.ceil(x);
-x = Math.pow(x, 2);
-x = Math.sqrt(x);
-x = Math.abs(x);
-maximum = Math.max(x, y, z);
-minimum = Math.min(x, y, z);
-x = Math.PI;
+x = Math.round(x); => มากกว่า .5 ปัดขึ้น,น้อยกว่า .5 ปัดลง
+x = Math.floor(x); => ปัดลงเสมอ
+x = Math.ceil(x); ​=> ปัดขึ้นเสมอ
+x = Math.pow(x, 2); => x ยกกำลัง 2
+x = Math.sqrt(x); => square root
+x = Math.abs(x); => absolute ตัวเลข (ค่า+เสมอ)
+maximum = Math.max(x, y, z); => หา maximum
+maximum = Math.max(...arr);
+minimum = Math.min(x, y, z); => หา minimum
+minimum = Math.min(...arr);
+x = Math.PI; => constant ค่า PI
 ```
 
 ## `Hypotenuse calculator`
