@@ -138,3 +138,20 @@ Math.floor(Math.random() * n ) -> จะ random ตั้งแต่ 0 - n (int
 ถ้าต้องการ random ตัวเลขให้มี range ตั้งแต่ 1 - n
 Math.floor(Math.random() * n ) + 1 -> จะ random ตั้งแต่ 1 - n (integer number)
 ```
+
+## `String method`
+
+```
+let userName = "Bro Code";
+let phoneNumber = "123-456-7890";
+
+userName.length; => get length
+userName.charAt(0); => get character at index 0
+userName.indexOf("o"); => get first index of character "o"
+userName.lastIndexOf("o"); => get last index of character "o"
+userName = userName.trim(); => ตัด white space ก่อนและหลัง string ออก
+userName = userName.toUpperCase(); => convert to upper case
+userName = userName.toLowerCase(); => convert to lower case
+
+phoneNumber = phoneNumber.replaceAll("-", ""); => replace string
+```
