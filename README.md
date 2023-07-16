@@ -187,3 +187,25 @@ letter1 = letter1.trim();
 // method chaining
 let letter2 = userName.charAt(0).toUpperCase().trim();
 ```
+
+## `If statement`
+
+```
+let age = 21;
+if (age >= 65) {
+  console.log("You are a senior citizen!");
+} else if (age >= 18) {
+  console.log("You are an adult!");
+} else if (age < 0) {
+  console.log("YOU HAVEN'T BEEN BORN YET!");
+} else {
+  console.log("You are a child!");
+}
+
+let online = false;
+if (online) {
+  console.log("You are online!");
+} else {
+  console.log("You are offline!");
+}
+```
