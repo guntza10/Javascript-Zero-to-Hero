@@ -565,3 +565,63 @@ let text = `Hello ${userName}<br>
 You have ${items} items in your cart<br>
 Your total is $${total}<br>`;
 ```
+
+## `Format currency`
+
+## `Array`
+
+## `Loop array`
+
+## `Sort array string`
+
+## `2D array`
+
+## `Spread operator`
+
+## `Rest parameter`
+
+## `Callback`
+
+## `Array forEach`
+
+## `Array map`
+
+## `Array filter`
+
+## `Array reducer`
+
+## `Sort array number`
+
+## `Function expression`
+
+## `Arrow function expression`
+
+## `Shuffle array`
+
+## `Nested function`
+
+## `Closure`
+
+## `Map`
+
+## `Object`
+
+## `This keyword`
+
+## `Class`
+
+## `Constructure`
+
+## `Static`
+
+## `Inheritance`
+
+## `Super keyword`
+
+## `Getter & Setter`
+
+## `Object as argument`
+
+## `Array object`
+
+## `Anonymous object`
