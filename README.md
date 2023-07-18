@@ -732,6 +732,28 @@ function displayConsole(output) {
 
 ## `Array forEach`
 
+- เป็นการ callback function ที่ใช้ในการวนลูป array
+
+```
+let students = ["spongebob", "patrick", "squidward"];
+students.forEach(capitalize);
+students.forEach(print);
+
+students.forEach((element,index,array) => {
+  // statement
+})
+
+// all parameter
+function capitalize(element, index, array) {
+  array[index] = element[0].toUpperCase() + element.substring(1);
+}
+
+// all element parameter
+function print(element) {
+  console.log(element);
+}
+```
+
 ## `Array map`
 
 ## `Array filter`
