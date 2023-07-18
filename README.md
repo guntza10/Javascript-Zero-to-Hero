@@ -608,6 +608,20 @@ let index = fruits.indexOf("kiwi"); // ถ้าไม่เจอ element จ�
 
 ## `Loop array`
 
+```
+let prices = [5, 10, 15, 20, 25];
+
+// loop for with index
+for(let i = 0; i < prices.length; i+=1){
+    console.log(prices[i]);
+}
+
+// loop for without index
+for (let price of prices) {
+  console.log(price);
+}
+```
+
 ## `Sort array string`
 
 ## `2D array`
