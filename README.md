@@ -590,6 +590,22 @@ myNum = myNum.toLocaleString(undefined, { style: "unit", unit: "celsius" });
 
 ## `Array`
 
+- เป็น type variable ที่สามารถ store multiple data ได้
+
+```
+let fruits = ["apple", "orange", "banana"];
+
+fruits[2] = "coconut";
+
+fruits.push("lemon"); //add an element
+fruits.unshift("mango"); //add element to beginning
+fruits.shift(); //removes element from beginning
+fruits.pop(); //removes last element
+
+let length = fruits.length;
+let index = fruits.indexOf("kiwi"); // ถ้าไม่เจอ element จะ return -1
+```
+
 ## `Loop array`
 
 ## `Sort array string`
