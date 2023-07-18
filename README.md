@@ -624,6 +624,17 @@ for (let price of prices) {
 
 ## `Sort array string`
 
+```
+let fruits = ["banana", "apple", "orange", "mango"];
+
+fruits = fruits.sort(); // normal sort
+fruits = fruits.sort().reverse(); // reverse sort
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+```
+
 ## `2D array`
 
 ## `Spread operator`
