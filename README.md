@@ -637,6 +637,24 @@ for (let fruit of fruits) {
 
 ## `2D array`
 
+- array ซ้อน array
+
+```
+let fruits = ["apples", "oranges", "bananas"];
+let vegetables = ["carrots", "onions", "potatoes"];
+let meats = ["eggs", "chicken", "fish"];
+
+let groceryList = [fruits, vegetables, meats]; // array of array
+
+groceryList[2][2] = "steak";
+
+for (let list of groceryList) {
+  for (let food of list) {
+    console.log(food);
+  }
+}
+```
+
 ## `Spread operator`
 
 ## `Rest parameter`
