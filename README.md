@@ -712,6 +712,24 @@ console.log(sum(1, 2, 3, 4));
 
 ## `Callback`
 
+- callback function => function ที่ถูกส่งไปใช้ใน function อื่นเป็น argument และจะถูก execute เมื่อ parent function มีการ execute สำเร็จ
+- callback function จะไม่ถูก execute จนกว่า parent function จะทำงานเสร็จ
+- One of the main advantages of using callback functions is that they allow you to control the flow of execution in asynchronous operations. This is especially important in JavaScript, where many operations (like network requests, timers, or user interactions) are asynchronous.
+- if you're fetching data from a server, you can't just proceed with the next line of code while you're waiting for the data. Instead, you'd provide a callback function to be executed when the data has been received. This way, you can ensure that the right code runs at the right time.
+
+```
+sum(2, 3, displayConsole);
+
+function sum(x, y, callBack) {
+  let result = x + y;
+  callBack(result);
+}
+
+function displayConsole(output) {
+  console.log(output);
+}
+```
+
 ## `Array forEach`
 
 ## `Array map`
