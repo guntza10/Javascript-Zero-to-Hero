@@ -846,6 +846,22 @@ console.log(sum); // 15
 
 ## `Function expression`
 
+- function without a name (`anonymous function`)
+- function expression is assigned to a variable
+- After the function has been stored in a variable, the variable can be used as a function
+- One advantage of function expressions is that they can be defined and used only when needed
+- จะต่างกับ function ปกติตรง
+  - function ปกติประกาศที่ไหนก็ได้(`ก่อนหรือหลังเรียกใช้`) สามารถเรียกใช้ได้ทุกที่(`ก่อนหรือหลังที่ประกาศ`)
+  - expression function จะเรียกใช้ได้ต้อง เรียกใช้หลังประกาศ (`เป็น variable ถ้าไปเรียกใช้ก่อนที่ประกาศ มันจะไม่รู้จัก`)
+
+```
+let greet = function(name) {
+  return `Hello, ${name}!`;
+};
+
+console.log(greet("Alice"));  // Outputs: Hello, Alice!
+```
+
 ## `Arrow function expression`
 
 ## `Shuffle array`
