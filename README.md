@@ -798,6 +798,27 @@ function print(element) {
 
 ## `Array reducer`
 
+- callback function ในการ reduce array to single value โดยจะทำการวน element ใน array ทั้งหมด
+- reducer function จะมี 3 arguments
+  - accumulator => callback's value ของ previous callback
+  - currentValue => current element ที่กำลังวนถึง
+  - Initial value of accumulator => เป็น optional จะใส่หรือไม่ใส่ก็ได้ เป็นค่าเริ่มต้นของ accumulator
+- มันจะทำการวน element แต่ละตัว
+- แล้วนำ callback's value ที่ได้ keep ไว้ที่ accumulator
+- วนไป element ถัดไป แล้วทำ process แบบเดิมซ้ำจนครบทุก element
+- value ที่ได้คือ value ที่ถูกเก็บสะสมไว้เรื่อยๆใน accumulator
+- Initial value of accumulator ถ้าใส่ก็จะมี accumulator เริ่มต้นแล้วเริ่มวน element ตัวแรก
+- Initial value of accumulator ถ้าไม่ใส่ accumulator เริ่มต้นก็จะคือ element ตัวแรก แล้วเริ่มวน element ตัวที่สอง
+
+```
+let numbers = [1, 2, 3, 4, 5];
+let sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue; // callback's value
+}, 0); // Initial value of accumulator is set to 0
+
+console.log(sum); // 15
+```
+
 ## `Sort array number`
 
 ## `Function expression`
