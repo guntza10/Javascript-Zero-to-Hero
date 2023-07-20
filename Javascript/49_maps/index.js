@@ -7,10 +7,10 @@ const store = new Map([
   ["underwear", 50],
 ]);
 
-//store.get("t-shirt");
-//store.set("hat", 40);
-//store.delete("hat");
-//console.log(store.has("underwear"));
-//console.log(store.size);
+store.get("t-shirt");
+store.set("hat", 40);
+store.delete("hat");
+console.log(store.has("underwear"));
+console.log(store.size);
 
 store.forEach((value, key) => console.log(`${key} $${value}`));

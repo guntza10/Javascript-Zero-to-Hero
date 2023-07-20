@@ -949,6 +949,25 @@ closureFunction(); // logs: 'I am outside!'
 
 ## `Map`
 
+- object that holds key-value pairs of any data type
+
+```
+const store = new Map([
+  ["t-shirt", 20],
+  ["jeans", 30],
+  ["socks", 10],
+  ["underwear", 50],
+]);
+
+store.get("t-shirt"); // get value by key
+store.set("hat", 40); // add value with new key
+store.delete("hat"); // delete value with key
+console.log(store.has("underwear")); // check key is exist?
+console.log(store.size); // get amount of value in Map
+
+store.forEach((value, key) => console.log(`${key} $${value}`));
+```
+
 ## `Object`
 
 ## `This keyword`
