@@ -864,6 +864,20 @@ console.log(greet("Alice"));  // Outputs: Hello, Alice!
 
 ## `Arrow function expression`
 
+- การเขียน expression function แบบย่อ (`Javascript ES6`)
+
+```
+// normal expression function
+let addExpressionFunction = function(a,b) {
+  return a + b
+}
+console.log(addExpressionFunction(1, 2));
+
+// arrow expression function
+let addArrowFunction = (a, b) => a + b;
+console.log(addArrowFunction(1, 2));
+```
+
 ## `Shuffle array`
 
 ## `Nested function`
