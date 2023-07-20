@@ -929,6 +929,24 @@ function login() {
 
 ## `Closure`
 
+- we have an outer function and an inner function. The inner function has access to its own scope and the scope of the outer function due to JavaScript's scope chaining.
+- when the outer function executes and ends, its scope usually goes away. But if a closure (the inner function) is created inside that outer function, the closure will keep the outer function's scope alive so it can access it even after the outer function ends.
+
+```
+function outerFunction() {
+  let outerVariable = 'I am outside!';
+
+  function innerFunction() {
+    console.log(outerVariable); // Accessing outerVariable inside inner function
+  }
+
+  return innerFunction;
+}
+
+let closureFunction = outerFunction();
+closureFunction(); // logs: 'I am outside!'
+```
+
 ## `Map`
 
 ## `Object`
