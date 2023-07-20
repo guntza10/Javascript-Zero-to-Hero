@@ -780,6 +780,22 @@ function print(element) {
 
 ## `Array filter`
 
+- create new array with callback function(new array that have matched element)
+
+```
+let ages = [18, 16, 21, 17, 19, 90];
+let adults = ages.filter(checkAge);
+
+adults.forEach(print);
+
+function checkAge(element) {
+  return element >= 18;
+}
+function print(element) {
+  console.log(element);
+}
+```
+
 ## `Array reducer`
 
 ## `Sort array number`
