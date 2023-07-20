@@ -756,6 +756,8 @@ function print(element) {
 
 ## `Array map`
 
+- callback function ในการวน element ของ array แล้ว return เป็น new array
+
 ```
 let numbers = [1, 2, 3, 4, 5];
 let squares = numbers.map(square);
