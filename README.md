@@ -624,6 +624,8 @@ for (let price of prices) {
 
 ## `Sort array string`
 
+- converts all elements to strings and then compares their sequences of UTF-16 code unit values
+
 ```
 let fruits = ["banana", "apple", "orange", "mango"];
 
@@ -633,6 +635,29 @@ fruits = fruits.sort().reverse(); // reverse sort
 for (let fruit of fruits) {
   console.log(fruit);
 }
+```
+
+## `Sort array number`
+
+- converts all elements in array to strings and then compares their sequences of UTF-16 code unit values
+- after it convert all elements to string
+- comparison function work bys subtracting(`-`) [`ascending order`]
+  - result compare < 0 : a จะถูก sort index ให้ต่ำกว่า b (จะถูกเลื่อน index ให้มาก่อน b)
+  - result compare = 0 : a จะไม่มีการเปลี่ยนแปลง (อยู่ index เดิม)
+  - result compare > 0 : a จะถูก sort index ให้สูงกว่า b (จะถูกเลื่อน index ให้มาหลัง b)
+- สลับ a,b จะเป็นการ sort descending order
+
+```
+// ascending order
+let numbers = [5, 2, 1, 10, 7];
+numbers.sort((a, b) => a - b);
+console.log(numbers); // Outputs: [1, 2, 5, 7, 10]
+
+// descending order
+let numbers = [5, 2, 1, 10, 7];
+numbers.sort((a, b) => b - a);
+console.log(numbers); // Outputs: [10, 7, 5, 2, 1]
+
 ```
 
 ## `2D array`
@@ -818,8 +843,6 @@ let sum = numbers.reduce((accumulator, currentValue) => {
 
 console.log(sum); // 15
 ```
-
-## `Sort array number`
 
 ## `Function expression`
 
