@@ -1327,3 +1327,29 @@ function startRace(cars) {
 ```
 
 ## `Anonymous object`
+
+- คือ object ที่ instance แต่ไม่ได้ assign ให้ value
+- ซึ่งจริงๆ มันก็คือ object นั่นแหละ result ไม่ได้ต่างจาก object ปกติเลย
+
+```
+class Card {
+  constructor(value, suit) {
+    this.value = value;
+    this.suit = suit;
+  }
+}
+
+// array of Anonymous object
+let cards = [
+  new Card("A", "Hearts"), //Anonymous object
+  new Card("A", "Spades"),
+  new Card("A", "Diamonds"),
+  new Card("A", "Clubs"),
+  new Card("2", "Hearts"),
+  new Card("2", "Spades"),
+  new Card("2", "Diamonds"),
+  new Card("2", "Clubs"),
+];
+
+cards.forEach((card) => console.log(`${card.value} ${card.suit}`));
+```
