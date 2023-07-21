@@ -1188,6 +1188,7 @@ rabbit.run();
 ## `Super keyword`
 
 - super = Refers to the parent class. Commonly used to invoke constructor of a parent class
+- invoke constructor มันจะ ref parent class เพื่อให้สามารถ access property,method ของ parent class ได้
 
 ```
 class Animal {
