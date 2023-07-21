@@ -1328,6 +1328,7 @@ function startRace(cars) {
 
 ## `Anonymous object`
 
+- object without name,not directly referenced,less syntax. no need for unique names
 - คือ object ที่ instance แต่ไม่ได้ assign ให้ value
 - ซึ่งจริงๆ มันก็คือ object นั่นแหละ result ไม่ได้ต่างจาก object ปกติเลย
 
