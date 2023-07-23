@@ -60,8 +60,8 @@ students = students + 1;
 students = students - 1;
 students = students * 2;
 students = students / 2;
-let extraStudents = students % 2;
-students = students ** 2;
+let extraStudents = students % 2; => mod (หารเอาเศษ)
+students = students ** 2;  => exponential (ยกกำลัง)
 
 // แบบย่อ
 students += 1;
