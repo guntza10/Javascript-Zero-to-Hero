@@ -620,6 +620,15 @@ for(let i = 0; i < prices.length; i+=1){
 for (let price of prices) {
   console.log(price);
 }
+
+// loop array with index,element with loop for of in same time
+let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// arr.entries => return new Array Iterator object that contains the key/value pairs for each index in the array
+for (let [index, item] of arr.entries()) {
+    console.log('Index:', index);
+    console.log('Item:', item);
+}
 ```
 
 ## `Sort array string`
