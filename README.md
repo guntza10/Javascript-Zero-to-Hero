@@ -782,7 +782,7 @@ function capitalize(element, index, array) {
   array[index] = element[0].toUpperCase() + element.substring(1);
 }
 
-// all element parameter
+// only element parameter
 function print(element) {
   console.log(element);
 }
