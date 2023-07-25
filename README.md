@@ -184,6 +184,7 @@ phoneNumber = phoneNumber.replaceAll("-", ""); => replace string
 - string.slice(`startIndex`, `endIndex`) => มันจะ extract part ของ string ออกมาแล้ว return เป็น string ใหม่ โดยที่ไม่มีการ modify original string เดิม
 - string.slice(`startIndex`, `endIndex`) => ถ้าเราไม่ใส่ `endIndex` มันจะ extract มาตั้งแต่ `startIndex` ไปจนครบทุกตัว
 - ตอน extract มาตั้งแต่ `startIndex` ถึง `endIndex` มันจะเอามาหมดไม่รวม `endIndex`
+- ใช้กับ array ก็ได้
 
 ```
 let fullName = "Snoop Dogg";
@@ -601,6 +602,27 @@ fruits.push("lemon"); //add an element or multiple elements
 fruits.unshift("mango"); //add element to beginning
 fruits.shift(); //removes element from beginning
 fruits.pop(); //removes last element
+
+// splice(startIndex,countDeleted,newAddedElement) => change array element with add,remove
+fruits.splice(1, 1); // remove element with index
+console.log(fruits); // Output: ["apple", "banana"]
+
+fruits.splice(1, 0, "grape"); // add element at index
+console.log(fruits); // Output: ["apple", "grape", "orange", "banana"]
+
+fruits.splice(1, 1, "kiwi"); // replace element with another
+console.log(fruits); // Output: ["apple", "kiwi", "banana"]
+
+fruits.splice(1, 2, "mango"); // take out and add element
+console.log(fruits); // Output: ["apple", "mango"]
+
+fruits.splice(1); // remove all items from index without define countDeleted (ถ้าไม่ได้ระบุ ก็คือ remove all ตั้งแต่ startIndex)
+console.log(fruits); // Output: ["apple"]
+
+fruits.splice(-1, 1); // use negative index that ref index from the end
+console.log(fruits); // Output: ["apple", "orange"]
+
+// slice(startIndex, endIndex) extract part of array from startIndex to endIndex that not include endIndex (ใช้ได้ทั้ง array,string)
 
 let length = fruits.length;
 let index = fruits.indexOf("kiwi"); // ถ้าไม่เจอ element จะ return -1
