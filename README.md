@@ -626,6 +626,11 @@ console.log(fruits); // Output: ["apple", "orange"]
 
 let length = fruits.length;
 let index = fruits.indexOf("kiwi"); // ถ้าไม่เจอ element จะ return -1
+
+// check array is include
+const array = [1, 2, 3, 4, 5];
+console.log(array.includes(2)); // logs: true
+console.log(array.includes(6)); // logs: false
 ```
 
 ## `Loop array`
@@ -836,10 +841,11 @@ function print(element) {
 
 ## `Array filter`
 
-- create new array with callback function(new array that have matched element)
+- create new array with callback function(new array that have matched condition)
 
 ```
 let ages = [18, 16, 21, 17, 19, 90];
+// filter((element,index,array) => {})
 let adults = ages.filter(checkAge);
 
 adults.forEach(print);
