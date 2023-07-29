@@ -633,6 +633,8 @@ console.log(array.includes(2)); // logs: true
 console.log(array.includes(6)); // logs: false
 ```
 
+`Note :` https://morioh.com/a/d05e069353a9/20-javascript-array-methods
+
 ## `Loop array`
 
 ```
