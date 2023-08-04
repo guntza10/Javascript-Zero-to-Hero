@@ -653,7 +653,8 @@ for (let price of prices) {
 // loop array with index,element with loop for of in same time
 let arr = ['a', 'b', 'c', 'd', 'e'];
 
-// arr.entries => return new Array Iterator object that contains the key/value pairs for each index in the array
+// arr.entries => return new Array Iterator object that contains [index,item]
+// output arr.entries:  [[0,'a'],[1,'b'],[2,'c'],[3,'d'],[4,'e']]
 for (let [index, item] of arr.entries()) {
     console.log('Index:', index);
     console.log('Item:', item);
@@ -1078,6 +1079,8 @@ Object.keys(obj).forEach(key => {
 ```
 
 3. Object.entries
+
+- Object.entries(obj) => [['a', 1], ['b', 2], ['c', 3]] (return array ของ key,value)
 
 ```
 const obj = { a: 1, b: 2, c: 3 };
