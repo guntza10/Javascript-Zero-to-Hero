@@ -1053,6 +1053,50 @@ car2.drive();
 car2.brake();
 ```
 
+## `Loop property object`
+
+1. for...in
+
+```
+const obj = { a: 1, b: 2, c: 3 };
+
+for (let key in obj) {
+  if (obj.hasOwnProperty(key)) { // Ensure the key belongs to the object, not its prototype
+    console.log(`Key: ${key}, Value: ${obj[key]}`);
+  }
+}
+```
+
+2. Object.keys
+
+```
+const obj = { a: 1, b: 2, c: 3 };
+
+Object.keys(obj).forEach(key => {
+  console.log(`Key: ${key}, Value: ${obj[key]}`);
+});
+```
+
+3. Object.entries
+
+```
+const obj = { a: 1, b: 2, c: 3 };
+
+Object.entries(obj).forEach(([key, value]) => {
+  console.log(`Key: ${key}, Value: ${value}`);
+});
+```
+
+4. Object.values (if you only need values)
+
+```
+const obj = { a: 1, b: 2, c: 3 };
+
+Object.values(obj).forEach(value => {
+  console.log(`Value: ${value}`);
+});
+```
+
 ## `This keyword`
 
 - this => reference to a particular object. the object depends on the immediate context
