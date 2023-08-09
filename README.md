@@ -179,6 +179,8 @@ userName = userName.toLowerCase(); => convert to lower case
 phoneNumber = phoneNumber.replaceAll("-", ""); => replace string
 ```
 
+`Note :` https://morioh.com/a/2284be83e7b9/javascript-string-methods-26-built-in-string-methods
+
 ## `String slicing`
 
 - string.slice(`startIndex`, `endIndex`) => มันจะ extract part ของ string ออกมาแล้ว return เป็น string ใหม่ โดยที่ไม่มีการ modify original string เดิม
