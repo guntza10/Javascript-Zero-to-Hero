@@ -8,7 +8,7 @@ function solution(A, K) {
   for (var i = 0; i < n; i++) {
     if (A[i] + 1 < A[i + 1]) return false;
   }
-  if (A[0] != 1 && A[n - 1] === K) return false;
+  if (A[0] != 1 && A[n - 1] != K) return false;
   else return true;
 }
 
